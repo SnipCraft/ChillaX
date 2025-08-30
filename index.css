@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.logo {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: bounceIn 2s ease-in-out;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.9;
+  animation: fadeIn 3s ease-in-out;
+}
+
+button {
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #f7f7f7;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

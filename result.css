@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  background: linear-gradient(135deg, #00c9ff, #cdf7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.result-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #2f80ed;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
