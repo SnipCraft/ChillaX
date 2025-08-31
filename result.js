@@ -6,13 +6,13 @@ if (score===0){
   resultText.textContent = "⚠️ No answer given.";
   tips.textContent = "Please respond to the questions to get a result.";
 }
-else if (score <= 4) {
+else if (score <= 10) {
   resultText.textContent = "😌 Chill Mode: You’re super relaxed!";
   tips.textContent = "Keep it up! Stay hydrated and enjoy life.";
-} else if (score <= 7) {
+} else if (score <= 20) {
   resultText.textContent = "😅 Medium Stress: You’re holding up!";
   tips.textContent = "Try short breaks, a walk, or some fun music!";
-} else if(score<=10){
+} else {
   resultText.textContent = "😫 High Stress: Time to Chillax!";
   tips.textContent = "Breathe deep, take it easy, and maybe grab a snack.";
 }
