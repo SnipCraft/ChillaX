@@ -1,83 +1,103 @@
 const allQuestions = [
   {
     question: "⏰ Your alarm rings in the morning. What’s your move?",
-    options: ["😴 5 more minutes…", "🤬 Throw the alarm out the window", "🕺 Start dancing out of bed"],
+    options: ["🕺 Start dancing out of bed", "😴 5 more minutes…", "🤬 Throw the alarm out the window"],
+    score : [1,2,3]
   },
   {
     question: "🍕 You’re super hungry but too lazy to cook. What happens?",
     options: ["📱 Order food online", "🥫 Eat instant noodles", "😴 Sleep the hunger away"],
+    score : [1,2,3]
   },
   {
     question: "📱 Phone battery is 1% during a boring lecture. What do you do?",
-    options: ["🙄 Stare at the teacher", "✍️ Start doodling", "😇 Pray the phone lasts"],
+    options: ["😇 Pray the phone lasts", "✍️ Start doodling", "🙄 Stare at the teacher"],
+    score : [1,2,3]
   },
   {
     question: "🚦 Stuck at traffic light. How do you pass the time?",
-    options: ["🎤 Sing loudly", "🤳 Check phone again & again", "👀 Stare at strangers"],
+    options: ["🎤 Sing loudly", "👀 Stare at strangers", "🤳 Check phone again & again"],
+    score : [1,2,3]
   },
   {
     question: "📚 Big assignment due tomorrow. What’s your plan?",
-    options: ["😅 Start at midnight", "🙃 Ignore and chill", "📝 Finish like a hero last minute"],
+    options: ["😅 Start at midnight", "📝 Finish like a hero last minute", "🙃 Ignore and chill"],
+    score : [1,2,3]
   },
   {
     question: "🛏️ You’re too tired but friends call you out. Your reaction?",
-    options: ["😑 Fake excuses", "⚡ Go anyway (regret later)", "😂 Invite them to your place instead"],
+    options: ["😂 Invite them to your place instead", "⚡ Go anyway (regret later)", "😑 Fake excuses"],
+    score : [1,2,3]
   },
   {
     question: "🍫 Your friend offers chocolate but you’re on a diet. What’s next?",
-    options: ["😈 Eat it anyway", "🙅 Say no like a saint", "🤝 Take half and smile"],
+    options: ["🤝 Take half and smile", "😈 Eat it anyway", "🙅 Say no like a saint"],
+    score : [1,2,3]
   },
   {
     question: "🛒 At a mall, you see a SALE sign. What’s your instinct?",
-    options: ["💸 Spend all savings", "😐 Walk away bravely", "🛍️ Buy one thing, feel guilty later"],
+    options: ["💸 Spend all savings", "🛍️ Buy one thing, feel guilty later", "😐 Walk away bravely"],
+    score : [1,2,3]
   },
   {
     question: "🎧 Headphones on, favorite song plays. You…",
-    options: ["💃 Dance in public", "😎 Pretend you’re in a music video", "🎤 Sing out loud"],
+    options: ["💃 Dance in public", "🎤 Sing out loud", "😎 Pretend you’re in a music video"],
+    score : [1,2,3]
   },
   {
     question: "🔥 WiFi is gone. What do you do?",
-    options: ["📴 Restart router 100 times", "😱 Panic mode", "🛌 Sleep instantly"],
+    options: ["🛌 Sleep instantly", "📴 Restart router 100 times", "😱 Panic mode"],
+    score : [1,2,3]
   },
   {
     question: "🍟 Fries fell on the floor. Next move?",
-    options: ["🤔 5 second rule", "😩 Cry silently", "🐶 Feed it to imaginary dog"],
+    options: ["🤔 5 second rule", "🐶 Feed it to imaginary dog", "😩 Cry silently"],
+    score : [1,2,3]
   },
   {
     question: "📞 Phone rings from unknown number. You…",
-    options: ["🙅 Decline instantly", "📢 Answer dramatically", "😶 Ignore forever"],
+    options: ["📢 Answer dramatically", "😶 Ignore forever", "🙅 Decline instantly"],
+    score : [1,2,3]
   },
   {
     question: "😵 You sent a message to the wrong person. Reaction?",
-    options: ["😱 Panic delete", "😂 Pretend it was a joke", "🤡 Ignore like nothing happened"],
+    options: ["😂 Pretend it was a joke", "🤡 Ignore like nothing happened", "😱 Panic delete"],
+    score : [1,2,3]
   },
   {
     question: "☕ No coffee in the morning. You become…",
-    options: ["👹 A monster", "😴 Sleepy zombie", "🤐 Silent philosopher"],
+    options: ["🤐 Silent philosopher", "😴 Sleepy zombie", "👹 A monster"],
+    score : [1,2,3]
   },
   {
     question: "🛑 Procrastination hits hard. What’s your escape?",
     options: ["🎬 Watch Netflix", "🍔 Eat random snacks", "🧹 Clean the whole house"],
+    score : [1,2,3]
   },
   {
     question: "👕 You spilled food on your shirt outside. Now what?",
-    options: ["🙈 Hide it with a bag", "🤥 Blame someone else", "😎 Own it like a fashion trend"],
+    options: ["😎 Own it like a fashion trend", "🙈 Hide it with a bag", "🤥 Blame someone else"],
+    score : [1,2,3]
   },
   {
     question: "💤 Can’t sleep at 3AM. You…",
     options: ["📱 Scroll memes endlessly", "🥛 Drink milk", "🧘 Try meditation (fail)"],
+    score : [1,2,3]
   },
   {
     question: "🎂 Your birthday comes. What’s your vibe?",
     options: ["🎉 Throw a big party", "🎂 Eat cake alone happily", "🙃 Forget it’s your bday"],
+    score : [1,2,3]
   },
   {
     question: "💸 Found money in your pocket. You…",
-    options: ["🤑 Spend immediately", "😊 Save it", "🍦 Buy ice cream"],
+    options: ["🤑 Spend immediately", "🍦 Buy ice cream", "😊 Save it"],
+    score : [1,2,3]
   },
   {
     question: "📺 Watching a horror movie. You are…",
-    options: ["😱 Screaming", "😂 Laughing at characters", "🙈 Hiding under blanket"],
+    options: ["😂 Laughing at characters", "🙈 Hiding under blanket", "😱 Screaming"],
+    score : [1,2,3]
   }
 ];
 
@@ -114,13 +134,14 @@ function loadQuestion() {
   questionEl.textContent = q.question;
   optionsEl.innerHTML = "";
 
-  let shuffledOptions = shuffleOptions([...q.options]);
-  shuffledOptions.forEach(option => {
+  // Shuffle both options and maintain their score mapping
+  let indices = [0, 1, 2].sort(() => Math.random() - 0.5);
+  indices.forEach(i => {
     const btn = document.createElement("button");
-    btn.textContent = option;
+    btn.textContent = q.options[i];
     btn.className = "option-btn";
     btn.onclick = () => {
-      score++; // Each answered question adds to score
+      score += q.score[i]; // add corresponding score
       nextQuestion();
     };
     optionsEl.appendChild(btn);
