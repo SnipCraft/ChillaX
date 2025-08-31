@@ -6,10 +6,10 @@ if (score===0){
   resultText.textContent = "⚠️ No answer given.";
   tips.textContent = "Please respond to the questions to get a result.";
 }
-else if (score <= 10) {
+else if (score <= 15) {
   resultText.textContent = "😌 Chill Mode: You’re super relaxed!";
   tips.textContent = "Keep it up! Stay hydrated and enjoy life.";
-} else if (score <= 20) {
+} else if (score <= 22) {
   resultText.textContent = "😅 Medium Stress: You’re holding up!";
   tips.textContent = "Try short breaks, a walk, or some fun music!";
 } else {
@@ -20,3 +20,4 @@ else if (score <= 10) {
 function restart() {
   window.location.href = "index.html";
 }
+
